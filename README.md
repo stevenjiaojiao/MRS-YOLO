@@ -59,9 +59,7 @@ yolo val model=path/weight.pth data=path/data.yaml batch=1
 ```
 from ultralytics import YOLOv10
 
-model = YOLOv10.from_pretrained('jameslahm/yolov10{n/s/m/b/l/x}')
-
-model = YOLOv10('yolov10{n/s/m/b/l/x}.pt')
+model = YOLOv10('your-model.pt')
 
 model.val(data='coco.yaml', batch=256)
 ```
