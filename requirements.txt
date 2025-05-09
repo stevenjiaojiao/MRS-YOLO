@@ -1,0 +1,8 @@
+
+pycocotools==2.0.7
+PyYAML==6.0.1
+gradio==4.31.5
+psutil==5.9.8
+py-cpuinfo==9.0.0
+huggingface-hub==0.23.2
+safetensors==0.4.3
