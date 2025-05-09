@@ -17,25 +17,25 @@ python app.py
 ```
 MRS-YOLO/  
 ├── ultralytics/  
-│ ├── models/ # Model definitions (C2f-EB, MSRSDown, MSCA, etc.)  
-│ ├── data/ # Data loading and augmentation  
-│ ├── engine/ # Training, validation, and inference pipeline  
-│ ├── nn/ # Custom layers and loss functions  
-│ └── utils/ # Utility functions and evaluation metrics  
-│  
-├── cfg/ # Configuration files  
-│ ├── mrs_yolo.yaml # Model configuration  
+│   ├── assets/        # Resource files and model assets  
+│   ├── cfg/           # Configuration files  
+│   ├── data/          # Dataset and dataloader definitions  
+│   ├── engine/        # Training, validation, and prediction pipelines  
+│   ├── hub/           # Model downloading and registry logic  
+│   ├── models/        # Model architecture definitions 
+│   ├── nn/            # Custom layers and loss functions  
+│   ├── solutions/     # End-to-end solution pipelines  
+│   ├── trackers/      # Tracking-related modules  
+│   ├── utils/         # Utility functions and evaluation metrics  
+│   └── __init__.py    # Package initializer  
 │  
 ├── datasets/ # Data preparation and preprocessing scripts  
 │  
 ├── runs/ # Training logs and saved model checkpoints  
 │  
-├── train.py # Entry point for training  
-├── val.py # Evaluation script  
-├── detect.py # Inference script (image/video/folder)  
-├── export.py # Export models to ONNX, TorchScript, etc.  
+├── app.py # Entry point for training  
 ├── requirements.txt # Python dependencies  
-└── README.md # Project introduction and usage
+└── README.md # Project introduction and usage  
 ```
 # Data Preparation
 ```
